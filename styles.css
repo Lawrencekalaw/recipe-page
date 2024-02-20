@@ -1,0 +1,144 @@
+@import url(https://fonts.google.com/specimen/Outfit);
+@import url(https://fonts.google.com/specimen/Young+Serif);
+:root{
+     /*Layout*/
+    --Mobile: 375px;
+    --Desktop: 1440px;
+
+    /*colors*/
+    --Nutmeg: hsl(14, 45%, 36%);
+    --DarkRaspberry: hsl(332, 51%, 32%);
+
+    --White: hsl(0, 0%, 100%);
+    --RoseWhite: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --LightGrey: hsl(30, 18%, 87%);
+    --WengeBrown: hsl(30, 10%, 34%);
+    --DarkCharcoal: hsl(24, 5%, 18%);
+
+    /*Font weights*/
+    --Weights: 400, 600, 700;
+}
+body{
+    background: var(--Eggshell);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.home{
+    background: var(--White);
+    width: 30%;
+    height: 50%;
+    padding: 20px;
+    border: 12px solid var(--White);
+    border-radius: 13px;
+}
+.container .heading{
+    font-size: 1.6rem;
+    color: var(--DarkCharcoal);
+    font-weight: 600;
+}
+.container .description{
+    font-size: .8rem;
+    color: var(--DarkCharcoal);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+}
+.preperation-time{
+    background: var(--RoseWhite);
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+}
+.preperation-time p{
+    color: var(--DarkRaspberry);
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.preperation-time ul{
+    color: var(--DarkCharcoal);
+}
+.preperation-time span{
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ingredients p{
+    color: var(--Nutmeg);
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+.ingredients ul{
+    font-size: 1.1rem;
+    font-weight: 300;
+    display: block;
+    justify-items: flex-start;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+hr{
+    background: var(--DarkCharcoal);
+}
+.instructions span{
+    color: var(--DarkCharcoal);
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nutrition .head{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--Nutmeg);
+}
+.nutrition .text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nutrition .calories{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nutrition .calories span{
+    margin-left: 40%;
+    color: var(--DarkRaspberry);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.nutrition .carbs{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nutrition .carbs span{
+    margin-left: 50%;
+    color: var(--DarkRaspberry);
+    font-weight: 700;
+    font-size: 1.2rem;
+}.nutrition .protein{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nutrition .protein span{
+    margin-left: 45%;
+    color: var(--DarkRaspberry);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.nutrition .fat{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nutrition .fat span{
+    margin-left: 53%;
+    color: var(--DarkRaspberry);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+@media(max-width: 375px){
+    .home{
+        margin: 0;
+        border: none;
+        outline: none;
+        width: 100%;
+    }
+}
+
